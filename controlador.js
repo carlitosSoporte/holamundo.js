@@ -1,9 +1,25 @@
-let nombre="carlos";
-let edad = 5;
-let estatura = 1.62;
-let estaVivo = true;
-const PI = 3.141516;
+//variables de entrada
+let nombreCliente = "carlos";
+let telefonoCliente = "34532";
+let idCliente = "1017265716";
+let direccionCliente = "kr 98 # 70 d 90 int 9702";
 
-console.log("hola mundo");
-console.log("el nombre es "+nombre);
-console.log(`su nombre es ${nombre} y su estatura es ${estatura}`);
+let productoSeleccionado = "torta de chocolate";
+let tiendaSeleccionada = "tortas Deli S.A"
+let cantidad = 1;
+let precioProducto = 30000;
+
+const COSTOENVIO = 8500;
+let tieneDescuento = true;
+const DESCUENTO = 0.1;
+let totalCompra;
+
+//calcular el total
+if(tieneDescuento){
+    totalCompra = ((cantidad*precioProducto)*(1-DESCUENTO))+COSTOENVIO;
+}else{
+    totalCompra = (cantidad * precioProducto)+COSTOENVIO;
+}
+
+
+console.log(`Señor ${nombreCliente} su total a pagar es ${totalCompra}`);
