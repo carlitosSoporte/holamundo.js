@@ -8,6 +8,13 @@ let imagenTarjeta2 = document.getElementById("imagen2");
 
 tituloTarjeta2.textContent = "Banda Coldplay";
 textoApp.textContent ="Bandas de rock";
-audioVariable.src = "recursos/audio2.mp3";
-imagenTarjeta1.src = "recursos/imagen3.jpg";
-imagenTarjeta2.src = "recursos/imagen3.jpg";
+imagenTarjeta1.src = "recursos/imagen2.jpg";
+imagenTarjeta2.src = "recursos/imagen1.jpg";
+
+function cargarPista1(){
+    audioVariable.src="recursos/audio1.mp3";
+}
+
+function cargarPista2(){
+    audioVariable.src= "recursos/audio2.mp3";
+}
