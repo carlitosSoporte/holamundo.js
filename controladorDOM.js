@@ -1,7 +1,7 @@
-let tituloTarjeta2 = document.getElementById('titulo2');
-let audioVariable = document.getElementById('audio1');
-let botonPista1 = document.getElementById('pista1');
-let botonPista2 = document.getElementById('pista2');
+let tituloTarjeta2 = document.getElementById("titulo2");
+let audioVariable = document.getElementById("audio1");
+let botonPista1 = document.getElementById("pista1");
+let botonPista2 = document.getElementById("pista2");
 let textoApp = document.getElementById("textoPrincipal")
 let imagenTarjeta1 = document.getElementById("imagen1");
 let imagenTarjeta2 = document.getElementById("imagen2");
@@ -18,3 +18,10 @@ function cargarPista1(){
 function cargarPista2(){
     audioVariable.src= "recursos/audio2.mp3";
 }
+
+
+//detectamos clic
+botonPista1.addEventListener('click',cargarPista1);
+botonPista2.addEventListener("click",function(evento){
+    audioVariable.src= "recursos/audio2.mp3";
+});
